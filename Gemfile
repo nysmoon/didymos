@@ -6,7 +6,8 @@ ruby '2.6.3'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.0'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3', '~> 1.4'
+#gem 'sqlite3', '~> 1.4'
+gem 'mysql2'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
@@ -22,6 +23,12 @@ gem 'jbuilder', '~> 2.7'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+# Bootstrap
+gem 'bootstrap', '~> 4.3.1'
+# gem 'bootstrap-sass', '~> 3.4.1'
+gem 'autoprefixer-rails'
+gem 'materialize-sass'
+gem 'material_icons'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
@@ -52,3 +59,5 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+gem "appengine", "~> 0.5.0"

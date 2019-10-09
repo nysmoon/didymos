@@ -1,0 +1,25 @@
+entrypoint: bundle exec rackup --port $PORT
+env: flex
+runtime: ruby
+
+#production
+#env_variables:
+#  MYSQL_USER: root
+#  MYSQL_PASSWORD: 3xoe15Fkt7viNJHF
+#  MYSQL_DATABASE: didymos
+#  SECRET_KEY_BASE: a8cb33e35534b2edba82766bfa46f523eced195ecf27acd2c24d76287b7b4164533b7f49a66a693cc893f15ff6e37ca267fe12b5187ecd2b2583004689269913
+#
+#beta_settings:
+#  cloud_sql_instances: /cloudsql/didymos:us-central1:didymos
+
+#development: didymosdev
+env_variables:
+  MYSQL_USER: root
+  MYSQL_PASSWORD: h31w8t2E53jcy0K0
+  MYSQL_DATABASE: didymosdev
+  MYSQL_SOCKET_PATH: /cloudsql/didymos-dev:us-central1:didymosdev
+
+  SECRET_KEY_BASE:  947ad825898ab3922cc10be02b1cafa207ccd54a1b32a0dba0dab870eb0ffb9f9094f6263d7be5189bba98ea60a85d7c81cbea0527fa450692d97789c0445a40
+
+beta_settings:
+  cloud_sql_instances: didymos-dev:us-central1:didymosdev

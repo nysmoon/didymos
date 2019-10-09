@@ -1,0 +1,62 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ */
+
+@import "bootstrap";
+@import "material_icons";
+
+@mixin primary-color {
+  background-color: #333f4c;
+  color: #ffffff;
+}
+
+@mixin primary-color-hover {
+  background-color: #47596b;
+  color: #ffffff;
+}
+
+@mixin accent-color {
+  background-color: #f15f5a;
+  color: #ffffff;
+}
+
+@mixin accent-color-hover {
+  background-color: #ef4943;
+  color: #ffffff;
+}
+
+.fsm-bg-primary {
+  @include primary-color;
+}
+
+.fsm-bg-primary a {
+  @include primary-color;
+}
+
+.fsm-bg-primary a:hover {
+  @include primary-color-hover;
+}
+
+/*---=== Buttons ===---*/
+
+.fsm-btn-accent {
+  @include accent-color;
+}
+
+.fsm-btn-accent:hover {
+  @include accent-color-hover;
+}
+
+img.logo {
+  height: 40px;
+}

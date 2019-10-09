@@ -1,0 +1,18 @@
+<div class="row">
+  <div class="col-12">
+    <% @product_types.each do |product_type| %>
+      <div class="card" style="width: 18rem;">
+        <img src="https://materializecss.com/images/sample-1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"><%= product_type.title %></h5>
+          <p class="card-text"><%= product_type.description %></p>
+        </div>
+
+        <div class="card-body">
+          <%= link_to 'Show All', product_type_path(product_type), class: 'btn fsm-btn-accent' %>
+        </div>
+      </div>
+
+    <% end %>
+  </div>
+</div>
